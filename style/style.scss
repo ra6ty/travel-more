@@ -25,7 +25,7 @@ header {
     }
     & form {
       display: flex;
-      width: 25%;
+      width: 40%;
       margin: 4% auto 8% auto;
       & input {
         width: 85%;
@@ -73,7 +73,7 @@ header {
       text-decoration: none;
       width: fit-content;
       height: max-content;
-      font-family: 'Josefin Sans';
+      font-family: "Josefin Sans";
       font-size: 14px;
       letter-spacing: 0.2em;
       color: #ffffff;
@@ -90,7 +90,7 @@ header {
     background-color: #5474fd;
     padding: 1%;
     & p {
-      font-family: 'Josefin Sans';
+      font-family: "Josefin Sans";
       font-size: 24px;
       font-weight: 700;
       text-transform: uppercase;
@@ -109,7 +109,7 @@ header {
           margin: 0 2rem;
           & a {
             text-decoration: none;
-            font-family: 'Aleo', serif;
+            font-family: "Aleo", serif;
             font-size: 14px;
             font-weight: 400;
             text-transform: uppercase;
@@ -118,6 +118,153 @@ header {
             &:hover {
               color: #0e3689;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  width: 100%;
+  & .why-choose {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/main/background2.png");
+    @include backgroundImage;
+    padding: 8rem 0;
+    &__left {
+      width: fit-content;
+      margin-right: 6rem;
+      & h2 {
+        @include h2;
+      }
+      & p {
+        @include text;
+        margin-top: 5%;
+        max-width: 550px;
+      }
+      & a {
+        @include button;
+        background-color: #496bfe;
+        margin-top: 8%;
+      }
+    }
+    &__right {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      &_first {
+        width: 50%;
+      }
+      &_second {
+        width: 50%;
+        margin-top: 1%;
+        align-self: center;
+      }
+    }
+  }
+  & .search-places {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #333333;
+    padding: 5rem;
+    & div {
+      text-align: center;
+      & h2 {
+        @include h2;
+        margin-top: 2rem;
+      }
+    }
+  }
+  & .spain {
+    &__1 {
+      background-image: url(../images/main/background3.png);
+      @include backgroundImage;
+      padding: 10% 0% 5% 15%;
+      & div {
+        max-width: 550px;
+        background-color: #2e2d2ddc;
+        padding: 2rem 1rem;
+        & span {
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 20px;
+          color: #e8e8e8;
+        }
+        & h3 {
+          @include h3;
+          margin: 2rem 0;
+        }
+        & p {
+          @include text;
+          max-width: 480px;
+        }
+        & a {
+          @include button;
+          margin-top: 3rem;
+        }
+      }
+    }
+    &__2 {
+      background-image: url(../images/main/background4.png);
+      @include backgroundImage;
+      padding: 10% 0% 5% 20%;
+      display: flex;
+      justify-content: center;
+      & div {
+        max-width: 550px;
+        background-color: #2e2d2ddc;
+        padding: 2rem 1rem;
+        & span {
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 20px;
+          color: #e8e8e8;
+        }
+        & h3 {
+          @include h3;
+          margin: 2rem 0;
+        }
+        & p {
+          @include text;
+          max-width: 480px;
+        }
+        & a {
+          @include button;
+          margin-top: 3rem;
+        }
+      }
+    }
+  }
+  & .what-tourist-say {
+    background-image: url("../images/main/background5.png");
+    @include backgroundImage;
+    padding: 5% 0 10% 0%;
+    & h2 {
+      @include h2;
+      text-align: center;
+    }
+    &__box {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      & div {
+        max-width: 670px;
+        background-color: #333333;
+        padding: 3rem 5rem;
+        & h3 {
+          @include h3;
+        }
+        & p {
+          @include text;
+          & span {
+            color: #5474fd;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 45px;
           }
         }
       }

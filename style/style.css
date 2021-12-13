@@ -38,7 +38,7 @@ header .bhromaon form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 25%;
+  width: 40%;
   margin: 4% auto 8% auto;
 }
 
@@ -128,7 +128,7 @@ header .bhromaon .scroll {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-size: 14px;
   letter-spacing: 0.2em;
   color: #ffffff;
@@ -159,7 +159,7 @@ header .nav {
 }
 
 header .nav p {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-size: 24px;
   font-weight: 700;
   text-transform: uppercase;
@@ -187,7 +187,7 @@ header .nav .menu nav li {
 
 header .nav .menu nav li a {
   text-decoration: none;
-  font-family: 'Aleo', serif;
+  font-family: "Aleo", serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -199,5 +199,308 @@ header .nav .menu nav li a {
 
 header .nav .menu nav li a:hover {
   color: #0e3689;
+}
+
+main {
+  width: 100%;
+}
+
+main .why-choose {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/main/background2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0;
+}
+
+main .why-choose__left {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 6rem;
+}
+
+main .why-choose__left h2 {
+  font-family: 'Aleo';
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+main .why-choose__left p {
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #e8e8e8;
+  margin-top: 5%;
+  max-width: 550px;
+}
+
+main .why-choose__left a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  padding: 2% 6%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #5474fd;
+  background-color: #496bfe;
+  margin-top: 8%;
+}
+
+main .why-choose__right {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+}
+
+main .why-choose__right_first {
+  width: 50%;
+}
+
+main .why-choose__right_second {
+  width: 50%;
+  margin-top: 1%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .search-places {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #333333;
+  padding: 5rem;
+}
+
+main .search-places div {
+  text-align: center;
+}
+
+main .search-places div h2 {
+  font-family: 'Aleo';
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+main .spain__1 {
+  background-image: url(../images/main/background3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 0% 5% 15%;
+}
+
+main .spain__1 div {
+  max-width: 550px;
+  background-color: #2e2d2ddc;
+  padding: 2rem 1rem;
+}
+
+main .spain__1 div span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: #e8e8e8;
+}
+
+main .spain__1 div h3 {
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 2rem 0;
+}
+
+main .spain__1 div p {
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #e8e8e8;
+  max-width: 480px;
+}
+
+main .spain__1 div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  padding: 2% 6%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #5474fd;
+  margin-top: 3rem;
+}
+
+main .spain__2 {
+  background-image: url(../images/main/background4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 0% 5% 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .spain__2 div {
+  max-width: 550px;
+  background-color: #2e2d2ddc;
+  padding: 2rem 1rem;
+}
+
+main .spain__2 div span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  color: #e8e8e8;
+}
+
+main .spain__2 div h3 {
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 2rem 0;
+}
+
+main .spain__2 div p {
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #e8e8e8;
+  max-width: 480px;
+}
+
+main .spain__2 div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  font-size: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  padding: 2% 6%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: #5474fd;
+  margin-top: 3rem;
+}
+
+main .what-tourist-say {
+  background-image: url("../images/main/background5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 0 10% 0%;
+}
+
+main .what-tourist-say h2 {
+  font-family: 'Aleo';
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+main .what-tourist-say__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .what-tourist-say__box div {
+  max-width: 670px;
+  background-color: #333333;
+  padding: 3rem 5rem;
+}
+
+main .what-tourist-say__box div h3 {
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+main .what-tourist-say__box div p {
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #e8e8e8;
+}
+
+main .what-tourist-say__box div p span {
+  color: #5474fd;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
 }
 /*# sourceMappingURL=style.css.map */
