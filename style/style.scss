@@ -1,2 +1,126 @@
 @import "mixins";
-@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap");
+body {
+  width: 100%;
+}
+
+header {
+  .bhromaon {
+    background-image: url(../images/header/background1.png);
+    @include backgroundImage;
+    padding: 10% 5% 8% 5%;
+    text-align: center;
+    flex-wrap: wrap;
+    & h1 {
+      @include h1;
+      margin: 0;
+    }
+    & .safe {
+      font-family: "Josefin Sans";
+      font-size: 22px;
+      line-height: 26px;
+      color: #ffffff;
+      letter-spacing: 0.31em;
+      margin-top: 1rem;
+    }
+    & form {
+      display: flex;
+      width: 25%;
+      margin: 4% auto 8% auto;
+      & input {
+        width: 85%;
+        background-color: #ffffff;
+        border: none;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 20px;
+        padding: 2.5% 25%;
+        &::placeholder {
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: 2px;
+          color: #999999;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      & button {
+        width: fit-content;
+        border: 2px solid #ffffff;
+        background-color: #5474fd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        padding: 1.5% 6% !important;
+        font-family: "Aleo", serif;
+        text-transform: uppercase;
+        color: #ffffff;
+        &:hover {
+          background-color: #0e3689;
+          transition: 0.3s;
+        }
+        & object {
+          margin: 0 0 0 8%;
+        }
+        & span {
+          margin: 5% 0 0 0;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+    & .scroll {
+      text-decoration: none;
+      width: fit-content;
+      height: max-content;
+      font-family: 'Josefin Sans';
+      font-size: 14px;
+      letter-spacing: 0.2em;
+      color: #ffffff;
+      margin: 0 auto;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+    }
+  }
+  & .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5474fd;
+    padding: 1%;
+    & p {
+      font-family: 'Josefin Sans';
+      font-size: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #ffffff;
+    }
+    & .menu-btn {
+      display: none;
+    }
+    & .menu {
+      & nav {
+        list-style-type: none;
+        width: max-content;
+        display: inline-flex;
+        & li {
+          margin: 0 2rem;
+          & a {
+            text-decoration: none;
+            font-family: 'Aleo', serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #ffffff;
+            width: fit-content;
+            &:hover {
+              color: #0e3689;
+            }
+          }
+        }
+      }
+    }
+  }
+}
