@@ -1,0 +1,116 @@
+  @mixin backgroundImage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @mixin button {
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: center;
+    color: #ffffff;
+    padding: 1% 2%;
+    width: max-content;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  @mixin text {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #e8e8e8;
+  }
+  
+  @mixin h2 {
+    font-family: 'Aleo';
+    font-size: 36px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+  
+  @mixin h1 {
+    font-family: 'Josefin Sans';
+    font-size: 48px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  @mixin h3 {
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  @mixin hamburger {
+    /* Гамбургер иконка */
+    .menu-btn {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+    }
+    .menu-btn span {
+      width: 30px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #222222;
+      transition: all 0.5s;
+    }
+    /* Меняем гамбургер иконку, когда меню открыто */
+    .menu-btn span:nth-of-type(2) {
+      top: calc(50% - 5px);
+    }
+    .menu-btn span:nth-of-type(3) {
+      top: calc(50% + 5px);
+    }
+    .menu-btn.active span:nth-of-type(1) {
+      display: none;
+    }
+    .menu-btn.active span:nth-of-type(2) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(45deg);
+    }
+    .menu-btn.active span:nth-of-type(3) {
+      top: 50%;
+      transform: translate(-50%, 0%) rotate(-45deg);
+    }
+    /* Меню, которое будет появляться */
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      background: #FFEFBA;
+      transform: translateX(100%);
+      transition: transform 0.5s;
+      overflow: auto;
+    }
+    .menu.active {
+      transform: translateX(0);
+      & nav {
+        width: fit-content;
+        & li {
+          display: block;
+          margin: 1rem;
+        }
+      }
+    }
+    .menu li {
+      list-style-type: none;
+    }
+  }
