@@ -271,6 +271,10 @@ main .why-choose__left a {
   margin-top: 8%;
 }
 
+main .why-choose__left a:hover {
+  background-color: #0e3689;
+}
+
 main .why-choose__right {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -382,6 +386,10 @@ main .spain__1 div a {
   margin-top: 3rem;
 }
 
+main .spain__1 div a:hover {
+  background-color: #0e3689;
+}
+
 main .spain__2 {
   background-image: url(../images/main/background4.png);
   background-position: center;
@@ -447,6 +455,10 @@ main .spain__2 div a {
   margin-top: 3rem;
 }
 
+main .spain__2 div a:hover {
+  background-color: #0e3689;
+}
+
 main .what-tourist-say {
   background-image: url("../images/main/background5.png");
   background-position: center;
@@ -502,5 +514,44 @@ main .what-tourist-say__box div p span {
   color: #5474fd;
   font-family: 'Times New Roman', Times, serif;
   font-size: 45px;
+}
+
+footer {
+  width: 100%;
+  background-color: #232323;
+  text-align: center;
+  padding: 6% 0 3% 0;
+}
+
+footer h2 {
+  font-family: 'Josefin Sans';
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+}
+
+footer p {
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+footer .contact {
+  width: 9%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem auto;
+}
+
+footer .contact object {
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */

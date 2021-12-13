@@ -152,6 +152,9 @@ main {
         background-color: #496bfe;
         margin-top: 8%;
       }
+      & a:hover {
+        background-color: #0e3689;
+      }
     }
     &__right {
       width: fit-content;
@@ -208,6 +211,9 @@ main {
           @include button;
           margin-top: 3rem;
         }
+        & a:hover {
+          background-color: #0e3689;
+        }
       }
     }
     &__2 {
@@ -236,6 +242,9 @@ main {
         & a {
           @include button;
           margin-top: 3rem;
+        }
+        & a:hover {
+          background-color: #0e3689;
         }
       }
     }
@@ -268,6 +277,37 @@ main {
           }
         }
       }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #232323;
+  text-align: center;
+  padding: 6% 0 3% 0;
+  & h2 {
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: #ffffff;
+  }
+  & p {
+    font-family: 'Josefin Sans';
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  & .contact {
+    width: 9%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    & object {
+      pointer-events: none;
     }
   }
 }
