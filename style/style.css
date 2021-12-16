@@ -53,7 +53,7 @@ header .bhromaon form input {
   border: none;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
-  padding: 2.5% 25%;
+  padding: 2.5%;
 }
 
 header .bhromaon form input::-webkit-input-placeholder {
@@ -176,7 +176,7 @@ header .nav .menu-btn {
   display: none;
 }
 
-header .nav .menu nav {
+header .nav .menu nav ul {
   list-style-type: none;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -186,11 +186,11 @@ header .nav .menu nav {
   display: inline-flex;
 }
 
-header .nav .menu nav li {
+header .nav .menu nav ul li {
   margin: 0 2rem;
 }
 
-header .nav .menu nav li a {
+header .nav .menu nav ul li a {
   text-decoration: none;
   font-family: "Aleo", serif;
   font-size: 14px;
@@ -202,7 +202,7 @@ header .nav .menu nav li a {
   width: fit-content;
 }
 
-header .nav .menu nav li a:hover {
+header .nav .menu nav ul li a:hover {
   color: #0e3689;
 }
 
@@ -592,6 +592,9 @@ footer .contact object {
   header .bhromaon form input {
     padding: 1;
   }
+  header .nav {
+    padding: 1rem 0;
+  }
   header .nav .menu-btn {
     display: block;
   }
@@ -672,18 +675,17 @@ footer .contact object {
     background: -webkit-gradient(linear, left top, left bottom, from(#66c2ff), to(#ffeee6));
     background: linear-gradient(#66c2ff, #ffeee6);
   }
-  .menu.active nav {
+  .menu.active nav ul {
     display: block !important;
     width: 100%;
-    border: 2px solid whitesmoke;
   }
-  .menu.active nav li {
+  .menu.active nav ul li {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     margin: 1rem !important;
   }
-  .menu.active nav li a {
+  .menu.active nav ul li a {
     color: #383131 !important;
   }
   main .why-choose {
@@ -691,6 +693,14 @@ footer .contact object {
   }
   main .why-choose__left {
     margin: 0;
+  }
+  main .why-choose__left h2 {
+    text-align: center;
+    line-height: 42px;
+  }
+  main .why-choose__left a {
+    margin: 1.5rem auto;
+    padding: 0.5rem;
   }
   main .why-choose__right {
     width: 95%;
@@ -710,6 +720,11 @@ footer .contact object {
   }
   main .spain div {
     padding: 1rem;
+    margin: 0 auto;
+    display: block;
+  }
+  main .spain div a {
+    margin: 1rem auto;
   }
   main .what-tourist-say h2 {
     margin: 2rem;
@@ -749,7 +764,7 @@ footer .contact object {
     margin-top: 0.3rem;
   }
   header .bhromaon form input {
-    padding: 1;
+    padding: 1rem;
   }
   header .nav .menu nav li {
     margin: 0 1rem;
